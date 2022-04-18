@@ -1,0 +1,15 @@
+<h1>Set Passcode</h1>
+<div class="flex-container">
+    <app-lever (stateChanged)="update($event, 0)"></app-lever>
+    <app-lever (stateChanged)="update($event, 1)"></app-lever>
+    <app-lever (stateChanged)="update($event, 2)"></app-lever>
+    <app-lever (stateChanged)="update($event, 3)"></app-lever>
+</div>
+<div class="flex-container">
+    <app-lever (stateChanged)="update($event, 4)"></app-lever>
+    <app-lever (stateChanged)="update($event, 5)"></app-lever>
+    <app-lever (stateChanged)="update($event, 6)"></app-lever>
+    <app-lever (stateChanged)="update($event, 7)"></app-lever>
+</div>
+
+<button mat-flat-button (click)="validateLevers()">Press For Entry</button>
