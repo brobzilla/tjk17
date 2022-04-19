@@ -3,7 +3,7 @@
 var express = require("express");
 // Use body-parser
 var bodyParser = require("body-parser");
-const { addSyntheticLeadingComment } = require("typescript");
+//const { addSyntheticLeadingComment } = require("typescript");
 
 // Create new instance of the express server
 var app = express();
