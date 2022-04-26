@@ -32,6 +32,8 @@ export class LockScreenComponent implements OnInit {
         this.passcodeSevice.isLoggedIn = result
         
         this.router.navigate([this.passcodeSevice.redirectUrl]);
+      } else {
+        this.router.navigate(['notauthorized']);
       }
     })
 
