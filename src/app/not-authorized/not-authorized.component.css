@@ -1,26 +1,10 @@
 .center {
     margin: auto;
     width: 50%;
-    border: 3px solid green;
+    border: 3px solid blue;
     padding: 10px;
     text-align: center;
   }
   h1 {
     margin-bottom: 0;
-  }
-  a {
-    padding: 1rem;
-    text-decoration: none;
-    margin-top: 10px;
-    display: inline-block;
-    background-color: #e8e8e8;
-    color: #3d3d3d;
-    border-radius: 4px;
-  }
-  a:hover {
-    color: white;
-    background-color: #42545C;
-  }
-  a.active {
-    background-color: black;
   }

@@ -7,8 +7,8 @@ import { LeverGuard } from './lever.guard';
 import { LockScreenComponent } from './lock-screen/lock-screen.component';
 import { NotAuthorizedComponent } from './not-authorized/not-authorized.component';
 import { AboutComponent } from './main-menu/about/about.component';
-import { HomeComponent } from './main-menu/home/home.component';
 import { VideosComponent } from './main-menu/videos/videos.component';
+import { DashboardComponent } from './main-menu/dashboard/dashboard.component';
 
 
 const appRoutes: Routes = [
@@ -16,7 +16,7 @@ const appRoutes: Routes = [
     canActivate: [LeverGuard],
     component: MainMenuComponent,
     children:[
-      { path: 'home', canActivate: [LeverGuard], component: HomeComponent},
+      { path: 'home', canActivate: [LeverGuard], component: DashboardComponent},
       { path: 'about', canActivate: [LeverGuard], component: AboutComponent},
       { path: 'videos', canActivate: [LeverGuard], component: VideosComponent},
     ]
