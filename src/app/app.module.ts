@@ -10,6 +10,9 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NotAuthorizedComponent } from './not-authorized/not-authorized.component';
+import { AboutComponent } from './main-menu/about/about.component';
+import { VideosComponent } from './main-menu/videos/videos.component';
+import { HomeComponent } from './main-menu/home/home.component';
 
 
 
@@ -20,7 +23,10 @@ import { NotAuthorizedComponent } from './not-authorized/not-authorized.componen
     LeverComponent,
     MainMenuComponent,
     PageNotFoundComponent,
-    NotAuthorizedComponent
+    NotAuthorizedComponent,
+    AboutComponent,
+    VideosComponent,
+    HomeComponent
   ],
   imports: [
     AppRoutingModule,

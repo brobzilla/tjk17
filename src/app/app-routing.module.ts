@@ -6,15 +6,27 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { LeverGuard } from './lever.guard';
 import { LockScreenComponent } from './lock-screen/lock-screen.component';
 import { NotAuthorizedComponent } from './not-authorized/not-authorized.component';
+import { AboutComponent } from './main-menu/about/about.component';
+import { HomeComponent } from './main-menu/home/home.component';
+import { VideosComponent } from './main-menu/videos/videos.component';
 
 
 const appRoutes: Routes = [
-  { path: 'main',        canActivate: [LeverGuard], component: MainMenuComponent },
+  { path: 'm',
+    canActivate: [LeverGuard],
+    component: MainMenuComponent,
+    children:[
+      { path: 'home', canActivate: [LeverGuard], component: HomeComponent},
+      { path: 'about', canActivate: [LeverGuard], component: AboutComponent},
+      { path: 'videos', canActivate: [LeverGuard], component: VideosComponent},
+    ]
+  },
   { path: 'lockscreen', component: LockScreenComponent},
   { path: 'notauthorized', component: NotAuthorizedComponent},
-  { path: '',   redirectTo: '/main', pathMatch: 'full' },
+  { path: '',   redirectTo: '/m', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
+
 
 @NgModule({
   declarations: [],
